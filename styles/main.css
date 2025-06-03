@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #2d2d2d;
+  --secondary-color: #000914;
+  --accent-color: #1a2040;
+  --neutral-dark: #1a1a1a;
+  --neutral-light: #f5f3f0;
+  --beige-light: #e8e4dc;
+  --beige-medium: #d4cfc4;
+  --success-color: #000914;
+}
+
+/* Vintage Theme - Tommy Hilfiger/Polo Inspired */
+.vintage-theme {
+  --vintage-primary: #8b4513;
+  --vintage-secondary: #d2691e;
+  --vintage-accent: #cd853f;
+  --vintage-bg: linear-gradient(135deg, #faf6f0 0%, #f0e6d6 100%);
+  --vintage-card: #fff8dc;
+  background: var(--vintage-bg);
+  font-family: 'Playfair Display', serif;
+}
+
+/* Modern Theme - Nike/Adidas Inspired */
+.modern-theme {
+  --modern-primary: #000000;
+  --modern-secondary: #ff6b35;
+  --modern-accent: #333333;
+  --modern-bg: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #e9ecef 100%);
+  --modern-card: #ffffff;
+  background: var(--modern-bg);
+  font-family: 'Inter', sans-serif;
+}
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--neutral-light);
+  color: var(--neutral-dark);
+  transition: all 0.3s ease;
+  min-height: 100vh;
+}
+
+/* Vintage Styles */
+.vintage-theme .card-vintage {
+  background-color: var(--vintage-card);
+  border: 2px solid var(--vintage-accent);
+  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.15);
+}
+
+.vintage-theme .btn-vintage {
+  background-color: var(--vintage-primary);
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.vintage-theme .btn-vintage:hover {
+  background-color: var(--vintage-secondary);
+}
+
+.vintage-theme .text-vintage {
+  color: var(--vintage-primary);
+  font-family: 'Playfair Display', serif;
+}
+
+.vintage-theme .text-vintage-secondary {
+  color: var(--vintage-secondary);
+  font-family: 'Playfair Display', serif;
+}
+
+/* Modern Styles */
+.modern-theme .card-modern {
+  background-color: var(--modern-card);
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.modern-theme .btn-modern {
+  background-color: var(--modern-primary);
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.modern-theme .btn-modern:hover {
+  background-color: var(--modern-secondary);
+}
+
+.modern-theme .text-modern {
+  color: var(--modern-primary);
+  font-weight: 700;
+}
+
+.modern-theme .text-modern-secondary {
+  color: var(--modern-secondary);
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--neutral-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(45, 45, 45, 0.3);
+}
+
+.btn-accent {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-accent {
+  color: var(--secondary-color);
+}
+
+.border-primary {
+  border-color: var(--primary-color);
+}
+
+.bg-beige {
+  background-color: var(--beige-light);
+}
+
+.bg-beige-medium {
+  background-color: var(--beige-medium);
+}
